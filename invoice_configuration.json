@@ -1,44 +1,43 @@
 {
-    "fields": [
-      {
-        "id": "client",
-        "anchor": "Bill To",
-        "method": {
-          "id": "label",
-          "position": "below"
-        }
+  "fields": [
+  {
+      "id": "invoice_date",
+      "type": {
+        "id": "date",
+        "format": [
+          "%D/%M/%Y"
+        ]
       },
-      {
-        "id": "invoice_number",
-        "type": "number",
-        "anchor": "Invoice #",
-        "method": {
-          "id": "row",
-          "position": "right"
-        }
-      },
-      {
-        "id": "invoice_date",
-        "type": {
-          "id": "date",
-          "format": [
-            "%D/%M/%Y"
-          ]
-        },
-        "anchor": "Invoice Date",
-        "method": {
-          "id": "question",
-          "question": "what's the invoice date"
-        }
-      },
-      {
-        "id": "total",
-        "type": "currency",
-        "anchor": "Total",
-        "method": {
-          "id": "row",
-          "position": "right"
-        }
+      "method": {
+        "id": "question",
+        "question": "what's the invoice date"
       }
-    ]
-  }
+    },
+    {
+      "id": "client",
+      "anchor": "Bill To",
+      "method": {
+        "id": "label",
+        "position": "below"
+      }
+    },
+    {
+      "id": "invoice_number",
+      "type": "number",
+      "anchor": "Invoice #",
+      "method": {
+        "id": "row",
+        "position": "right"
+      }
+    },
+    {
+      "id": "total",
+      "type": "currency",
+      "anchor": "Total",
+      "method": {
+        "id": "row",
+        "position": "right"
+      }
+    }
+  ]
+}
