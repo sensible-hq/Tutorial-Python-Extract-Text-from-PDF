@@ -38,6 +38,30 @@
         "id": "row",
         "position": "right"
       }
+    },
+    {
+      "id": "invoice_items",
+      "anchor": "Williamson Gardening",
+      "type": "table",
+      "method": {
+        "id": "table",
+        "columns": [
+          {
+            "id": "col1_description",
+            "terms": [
+              "Description"
+            ]
+          },
+          {
+            "id": "col2_amount",
+            "terms": [
+              "Amount"
+            ],
+            "type": "currency",
+            "isRequired": true
+          }
+        ]
+      }
     }
   ]
 }
